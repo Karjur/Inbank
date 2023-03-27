@@ -86,6 +86,7 @@ export default {
         loanAmountError.value ||
         loanPeriodError.value
       ) {
+        responseMessage.value = null;
         return;
       }
 
