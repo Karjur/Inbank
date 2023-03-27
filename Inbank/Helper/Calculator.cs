@@ -38,7 +38,7 @@ namespace Inbank.Helper
         }
         private double calculateCreditModifier(string personalCode) //As i understood there is only 4 personal codes, so i just set the modifier based on the last number.
         {
-            char secondToLastNr = FindSecondToLastChar(personalCode);
+            char secondToLastNr = personalCode[personalCode.Length - 2];
             double creditModifier = 0; //As we have 3 segments that are not in debt
             if(secondToLastNr == '7')
             {
@@ -53,12 +53,6 @@ namespace Inbank.Helper
                 creditModifier = 1000;
             }
             return creditModifier;
-        }
-
-        private char FindSecondToLastChar(string personalCode)
-        {
-            char c = personalCode[personalCode.Length - 2];
-            return c;
         }
     }
 }
