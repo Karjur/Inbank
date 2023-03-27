@@ -1,6 +1,6 @@
 # Inbank loan application 
 
-Inbank folder is backend, done with C#
+Inbank folder is backend, done with C# net6.0
 
 Frontend folder is frontend, done with Vue.js
 
