@@ -95,9 +95,6 @@ export default {
           )
       .then(response => {
         responseMessage.value = response.data;
-      })
-      .catch(error => {
-        responseMessage.value = error.response.data;
       });
     };
 
